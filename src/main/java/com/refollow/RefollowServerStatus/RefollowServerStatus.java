@@ -28,6 +28,7 @@ public class RefollowServerStatus {
 			// Command line Argument Pass value Of variables[config.properties file path]
 			// when Run jar file on CMD
 			CONFIG_PRO_FILE_PATH = args[0];
+			
 			Properties prop = loadPropertiesFile();
 			slackChannelUrl = prop.getProperty("slackIncomingWebHooksUrl");
 			refollowAppUrl = prop.getProperty("refollowAppUrl");
